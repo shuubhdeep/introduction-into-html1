@@ -1,0 +1,288 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>HTML Example</title>
+ <!--
+   This file demonstrates:
+   - Basic document structure (<!DOCTYPE>, <html>, <head>, <body>)
+   - Headings, paragraphs, line breaks
+   - Common HTML tags and elements
+   - Text formatting
+   - Lists (ordered/unordered)
+   - Tables
+   - Breadcrumbs (navigation)
+   - Hyperlinks
+   - Images and multimedia (audio/video)
+   - Forms and form controls
+ -->
+</head>
+<body bgcolor = '#ccffcc'>
+
+
+ <!-- Title / Heading -->
+ <header>
+   <h1>C-11 Web Technologies — HTML Example</h1>
+   <p><strong>Unit 1:</strong> Web Essentials &amp HTML</p>
+   <p> We need to Introduce &nbsp &nbsp Non breaking line </p>
+ </header>
+
+
+ <!-- Breadcrumbs (simple navigation aid) -->
+ <nav aria-label="Breadcrumb">
+   <ol>
+     <li><a href="https://www.w3schools.com/colors/colors_picker.asp">W3school</a></li>
+     <li><a href="#">Unit 1</a></li>
+     <li>HTML Basics</li>
+   </ol>
+ </nav>
+
+
+ <hr>
+
+
+ <!-- Headings, paragraphs, line breaks -->
+ <section>
+   <h2>What is the Web?</h2>
+   <p style="color:red;">The web is a collection of web pages stored on servers. We use browsers (Chrome, Edge, Firefox) to open these pages.</p>
+   <p>Pages are connected using hyperlinks.<br>
+      A line break tag (<code>&lt;br&gt;</code>) forces the next text to a new line without starting a new paragraph.</p>
+
+
+   <h3>Headings example</h3>
+   <h1>Heading 1</h1>
+   <h2>Heading 2</h2>
+   <h3>Heading 3</h3>
+   <h4>Heading 4</h4>
+   <h5>Heading 5</h5>
+   <h6>Heading 6</h6>
+
+
+   <h3>Text formatting</h3>
+   <p>This is <strong>bold</strong>, this is <em>italic</em>, this is <u>underlined</u> (deprecated use), and this is <small>small text</small>.</p>
+   <p>Inline code example: <code>&lt;img src="pic.jpg" alt="..."&gt;</code></p>
+ </section>
+
+
+ <hr>
+
+
+ <!-- Lists -->
+ <section>
+   <h2>Lists</h2>
+   <h3>Unordered list (bullets)</h3>
+   <ul>
+     <li>HTML Basics</li>
+     <li>Headings &amp; paragraphs</li>
+     <li>Lists &amp; tables</li>
+   </ul>
+
+
+   <h3>Ordered list (numbered)</h3>
+   <ol>
+     <li>Create <code>index.html</code></li>
+     <li>Add content</li>
+     <li>Open in browser</li>
+   </ol>
+
+
+   <h3>Nested lists</h3>
+   <ul>
+     <li>Fruits
+       <ul>
+         <li>Apple</li>
+         <li>Banana</li>
+       </ul>
+     </li>
+     <li>Vegetables
+       <ol>
+         <li>Carrot</li>
+         <li>Spinach</li>
+       </ol>
+     </li>
+   </ul>
+ </section>
+
+
+ <hr>
+
+
+ <!-- Table -->
+ <section>
+   <h2>Tables</h2>
+   <table border="1" cellpadding="8" cellspacing="1">
+     <caption>Weekly Timetable</caption>
+     <thead>
+       <tr>
+         <th>Day</th>
+         <th>9:00 - 10:00</th>
+         <th>10:00 - 11:00</th>
+         <th>11:00 - 12:00</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Monday</td>
+         <td>Math</td>
+         <td>HTML</td>
+         <td>CSS</td>
+
+
+       </tr>
+       <tr>
+         <td>Tuesday</td>
+         <td>Science</td>
+         <td>Programming</td>
+         <td>CSS</td>
+       </tr>
+       <tr>
+         <td>Wednesday</td>
+         <td>English</td>
+         <td>Web Lab</td>
+         <td>CSS</td>
+       </tr>
+       <tr>
+         <td>Thursday</td>
+         <td>Computer</td>
+         <td>Web technology</td>
+         <td>CSS</td>
+       </tr>
+      <!--  <tc>
+         <td>Sunday</td>
+         <td>Computer</td>
+         <td>Web technology</td>
+         <td>CSS</td>
+       </tc> -->
+     </tbody>
+     <tfoot>
+       <tr>
+         <td colspan="4">Keep this timetable simple and clear.</td>
+       </tr>
+     </tfoot>
+   </table>
+ </section>
+
+
+ <hr>
+
+
+ <!-- Links, images, multimedia -->
+ <section>
+   <h2>Hyperlinks, Images &amp; Multimedia</h2>
+
+
+   <h3>Hyperlinks</h3>
+   <p>Normal link to external site:
+     <a href="https://www.linkedin.com/in/radha-gobinda-das-6a01551b8/" target="_blank" rel="noopener">Visit Linkdin</a>
+   </p>
+   <p>Internal link (anchor on same page):
+     <a href="#contact-form">Jump to contact form</a>
+   </p>
+   <p>Email link:
+     <a href="mailto:someone@example.com">Send email</a>
+   </p>
+
+
+   <h3>Images</h3>
+   <p>Image with alt text:
+     <br>
+     <img src="/Users/radhagobindadas/Desktop/2.jpeg" alt="Sample placeholder image" width="300" height="500">
+   </p>
+
+
+   <h3>Audio</h3>
+   <p>Embedded audio (controls provided):</p>
+   <audio controls>
+     <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+   </audio>
+
+
+   <h3>Video</h3>
+   <p>Embedded video (controls provided):</p>
+   <video controls width="480">
+     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+   </video>
+ </section>
+
+
+ <hr>
+
+
+ <!-- Forms -->
+ <section id="contact-form">
+   <h2>Forms</h2>
+   <p>Forms collect input from the user.</p>
+
+
+   <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+     <fieldset>
+       <legend>Contact Form</legend>
+
+
+       <label for="name">Name:</label><br>
+       <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+
+       <label for="email">Email:</label><br>
+       <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+
+       <label for="message">Message:</label><br>
+       <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message here"></textarea><br><br>
+
+
+       <label>Gender:</label><br>
+       <input type="radio" id="male" name="gender" value="">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Female</label><br><br>
+
+
+       <label>Checklist</label>
+       <input type="checkbox" id="VS Code" name="VS Code" value="yes">
+       <label for="VS Code">HTML</label><br><br>
+       <input type="checkbox" id="Notepad" name="Notepad" value="yes">
+        <label for="Notepad">CSS</label><br><br>
+
+
+       <label for="age">Age:</label>
+       <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+
+       <label for="topic">Topic:</label>
+       <select id="topic" name="topic">
+         <option value="html">HTML</option>
+         <option value="css">CSS</option>
+         <option value="js">JavaScript</option>
+         <option value="html">HTML</option>
+         <option value="css">CSS</option>
+         <option value="js">JavaScript</option>
+       </select><br><br>
+
+
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+
+
+     </fieldset>
+   </form>
+ </section>
+
+
+ <hr>
+
+
+ <!-- Footer -->
+ <footer>
+   <p>Example file demonstrating core HTML elements — no CSS applied.</p>
+   <p>Last updated: 28 Nov 2025</p>
+ </footer>
+
+
+</body>
+</html>
